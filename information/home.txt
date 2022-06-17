@@ -1,0 +1,8 @@
+About Us
+	At our website, you'll find the most up to date memes and learn about their origin. No other site has the accuracy and sources we do.
+	
+Who Created This Site?
+	Alex Carron
+		A 16-year-old computer programmer in high-school who is certified in HTML, CSS, and JavaScript. Built this site's CSS and JavaScript.
+	Zachary Hendrix
+		A 17-year-old computer programmer in high-school who is certified in HTML, CSS, and JavaScript. Built this site's HTML.

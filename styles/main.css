@@ -1,0 +1,271 @@
+:root {
+	--most-light-color: #FFFFFF;
+	--very-light-color: #e6e6e6;
+	
+	--call-to-action-color: #d6af00;
+	
+	--main-most-light-color: #d3e8f3;
+	--main-very-light-color: #86cbed;
+	--main-light-color: #52baed;
+	--main-color: #29a4e1;
+	--main-dark-color: #1683b9;
+	--main-very-dark-color: #09557b;
+	--main-most-dark-color: #01141d;
+	
+	--very-dark-color: #262626;
+	--most-dark-color: #000000;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* NAVIGATION MENU */
+nav {
+	position: fixed;
+	top: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+	height: 50px;
+	padding: 20px;
+	gap: 20px;
+	
+	background-color: var(--very-dark-color);
+	box-shadow: 0px 0px 15px #000000A0;
+	
+	z-index: 2;
+}
+
+	/* Navigation Links */
+	nav a {
+		color: var(--very-light-color);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 22px;
+		text-shadow: 2px 2px 3px #000000;
+	}
+	
+	
+	
+/* HEADER */
+header {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	padding: 20px;
+	gap: 2vw;
+	
+	background-color: var(--most-dark-color);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+	/* Header Logo */
+	header img {
+		height: 100px;
+		
+		filter: drop-shadow(5px 5px 5px #000000);
+	}
+
+	/* Header Title */
+	header h1 {
+		font-size: 6vw;
+		font-weight: bold;
+		color: var(--main-light-color);
+		
+		text-shadow: 5px 5px 5px #000000;
+	}
+	
+	
+	
+/* MAIN */
+main {
+	display: flex;
+	flex-direction: column;
+	
+	color: var(--very-dark-color);
+}
+
+	/* Main Sections */
+	main section {
+		display: flex;
+		flex-direction: column;
+		padding: 80px 50px;
+		gap: 20px;
+		
+		box-shadow: inset 0px 0px 10px #00000020;
+		
+		background: var(--most-light-color);
+	}
+
+	/* Every Other Section */
+	main section:nth-child(2n) {
+		background: var(--very-light-color);
+	}
+		/* Main Sub-Sections */
+		main section>div {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 50px;
+			row-gap: 20px;
+		}
+			/* Main Sub-Sub-Sections */
+			main section>div>div {
+				display: flex;
+				flex-direction: column;
+				gap: 0px;
+			}
+	
+	/* Section Headings */
+	main section h2 {
+		font-size: 40px;
+		font-weight: bold;
+		color: var(--main-very-dark-color);
+		
+		text-shadow: 2px 2px 3px #00000030;
+	}
+	
+	/* Section Sub-Headings */
+	main section h3 {
+		font-size: 30px;
+		font-weight: bold;
+		color: var(--main-most-dark-color);
+		
+		text-shadow: 1px 1px 2px #00000020;
+	}
+	
+	/* Section Paragraphs */
+	main section p {
+		font-size: 20px;
+		color: var(--very-dark-color);
+		
+		text-shadow: 1px 1px 1px #00000010;
+	}
+	
+	
+	
+/* Footer */
+footer {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 50px;
+	column-gap: 50px;
+	row-gap: 20px;
+	
+	background: var(--very-dark-color);
+	color: var(--most-light-color);
+	text-align: center;
+	
+	box-shadow: 0px 0px 15px #000000A0;
+	
+	z-index: 2;
+}
+	/* Footer Sections */
+	footer section {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	
+		/* Footer Sections Headings */
+		footer section h2 {
+			font-size: 30px;
+			font-weight: bold;
+		}
+	
+		/* Footer Sections Paragraphs */
+		footer section p {
+			font-size: 15px;
+		}
+		
+		
+/* All Links */
+a {
+	color: var(--call-to-action-color);
+}
+
+/* All Input Containers */
+div.input {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+
+/* All Text Inputs */
+input[type="text"], input[type="email"] {
+	font-size: 20px;
+	padding: 2px 5px;
+	border: 2px var(--main-most-dark-color) solid;
+	border-radius: 4px;
+	
+	background: var(--main-most-light-color);
+	color: var(--main-most-dark-color);
+	
+	box-shadow: 2px 2px 3px #00000040;
+}
+
+/* All Select Boxes */
+select {
+	font-size: 16px;
+	padding: 2px 5px;
+	border: 2px var(--main-most-dark-color) solid;
+	border-radius: 2px;
+	
+	background: var(--main-most-light-color);
+	color: var(--main-most-dark-color);
+	font-weight: bold;
+	
+	box-shadow: 2px 2px 3px #00000040;
+}
+
+/* Hide Custom Question Input */
+div#custom_question_input_container {
+	display: none;
+}
+
+/* All Submit Containers */
+div.submit {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+	/* All Submit Buttons */
+	div.submit button {
+		font-size: 24px;
+		padding: 5px 10px;
+		border: 2px var(--main-most-dark-color) solid;
+		border-radius: 10px;
+		width: max-content;
+		
+		background: var(--main-most-dark-color);
+		color: var(--main-most-light-color);
+		font-weight: bold;
+		
+		box-shadow: 3px 3px 5px #000000A0;
+	}
+	
+/* Feedback Text */ 
+p#feedback_text {
+	display: none;
+	
+	font-size: 14px;
+	color: #660000;
+	
+	margin-top: 3px;
+}

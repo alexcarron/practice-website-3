@@ -1,0 +1,21 @@
+TOPIC
+	Meme Site
+	
+NAME 
+	Meme Museum
+	
+Description
+	At our website, you'll find the most up to date memes and learn about their origin. No other site has the accuracy and sources we do.
+	
+PAGES
+	Home
+	Current Memes
+	Contact Us
+	
+FOOTER
+	COPYRIGHT
+		&copy;Meme Museum 2022
+	PHONE NUMBER
+		(122) 001-0002
+	EMAIL
+		customersupport@mememuseum.com
